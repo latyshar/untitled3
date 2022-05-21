@@ -1,0 +1,126 @@
+
+.pos{
+    margin-right: 35px;
+
+}
+.pos1{
+    margin-left: 5px;
+
+}
+.img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+.butt{
+    background: #021b53;
+}
+
+
+.bg{
+    background: #e2e2e2;
+}
+
+
+
+.add_palitra {
+    display: block;
+    position: fixed;
+    left: 0px;
+    bottom: 20%;
+    z-index: 99999;
+}
+.podpiska{
+    height: 200px;
+    width: 60px;
+    background: #b24f4f;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+    0 2px 2px rgba(0,0,0,0.15),
+    0 4px 4px rgba(0,0,0,0.15),
+    0 8px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.boxShadow {
+
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+.text{
+    font-family: 'Arial Black', sans-serif;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: white;
+    letter-spacing: -2px;
+    font-size:16px;
+
+}
+
+
+
+main{
+    height: auto;
+
+}
+.bt1 {
+    background: #021b53;
+    border: none;
+    height: 39px;
+}
+.bt0 {
+    background: #b24f4f;
+    border: none;
+    height: 39px;
+}
+.bt2{
+    color: white; background:#021b53; border:none;
+}
+bt3{
+    background:#021b53; border: none;
+}
+.n{
+    margin-top:10px;  background: #021b53;
+}
+.c{
+    text-align: center;
+}
+.st1{
+    width: 55%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.txt{
+    color: #021b53; font-size: 36px; margin-bottom: 25px; margin-top: 25px;
+}
+.pht{
+    height:40vw; text-align: center;
+}
+.vv55{
+    width: 55vw;
+}
+.bn{
+    border: none;
+}
+.w{
+    min-width: 300px; width: 45%
+}
+.w70{
+    width: 70rem;
+}
+.tr{
+    background: #b24f4f; border: none; height: 10% ;width: 100%;margin-top: 10px; padding-top: 10px
+}
+fs{
+    font-size: 26px;
+}
+.lol{
+     display: none;padding:10px;background-color:#f1f1f1;
+ }
