@@ -1,17 +1,21 @@
 import React from 'react';
 import Main from "./pages/main";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Cabinet from "./pages/cabinet";
+import AddC from "./pages/AddC";
+import SearchC from "./pages/SearchC";
+import {Routes, Route} from "react-router-dom";
+
 function App() {
     return (
-        <div className="App">
+        <div>
+<Routes>
+         <Route path={'/'} element={<Main/>}/>
+         <Route path={'/main'} element={<Main/>}/>
+         <Route path={'/cabinet'} element={<Cabinet/>}/>
+         <Route path={'/add'} element={<AddC/>}/>
+         <Route path={'/search'} element={<SearchC/>}/>
 
-            <Header/>
-
-            <Main/>
-
-            <Footer/>
-
+</Routes>
         </div>
     );
 }

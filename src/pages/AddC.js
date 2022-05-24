@@ -1,20 +1,18 @@
+import Add from "../components/Add";
 import React from 'react';
-import Profile from "../components/profile";
-import Card from "../components/cardred";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Email from "../components/email";
 
-const Cabinet = () => {
+const AddC = () => {
     return (
         <div>
             <Header/>
-            <Profile/>
-            <Card/>
+            <Add/>
             <Email/>
             <Footer/>
         </div>
     );
 };
 
-export default Cabinet;
+export default AddC;
