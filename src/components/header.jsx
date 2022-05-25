@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../img/logo.png';
 import Modal from "../components/modalvxod";
-import ModalR from "../components/modalregis";
+
 import {Link} from "react-router-dom";
 
 const Header = () => {
@@ -20,6 +20,9 @@ const Header = () => {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link to={'/main'} className="nav-link active" aria-current="page">Главная</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={'/regist'} className="nav-link active" aria-current="page">Регистрация</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to={'/cabinet'} className="nav-link" href="../pages/cabinet.js">Личный кабинет</Link>
@@ -47,17 +50,12 @@ const Header = () => {
                         className="bt1 butt btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Вход
                         </button>
-                        <button type="button "
-                                className="bt0 btn btn-primary pos1" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                            Регистрация
-                        </button>
 
 
                     </div>
 
                 </div>
-                <Modal/>  <ModalR/>
+                <Modal/>
             </nav>
         </div>
 

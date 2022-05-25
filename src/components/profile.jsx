@@ -4,19 +4,19 @@ import {Link} from "react-router-dom";
 const Profile = (props) => {
 
     localStorage.token=props.token
-    let [custom, setCustom] = useState({first_name: '', last_name: '', email_r: '', country: ''})
+    let [custom, setCustom] = useState({name: '', email1: ''})
     useEffect(()=> {
         try {
             let myHeaders = new Headers();
             myHeaders.append("Authorization", "Bearer "+props.token);
             myHeaders.append("Content-Type", "application/json");
             let request_options={method: 'GET',  headers:myHeaders}
-            fetch('http://pet.сделай.site/user', request_options)
+            fetch('http://pet.сделай.site/login', request_options)
                 .then(custom => custom.json())
                 .then(custom => setCustom(custom))
         }
         catch  {
-            setCustom({first_name: '', last_name: '', email_r: '', country: ''})
+            setCustom({name: '', email1: ''})
         }
 
 
@@ -34,13 +34,11 @@ const Profile = (props) => {
                          style={{'minWidth': '300px'}}>
 
                         <p className="w-50 text-primary" style={{'minWidth': '250px'}}>email:</p>
-                        <p className="w-50" style={{'minWidth': '250px'}}>{custom.email_r}</p>
+                        <p className="w-50" style={{'minWidth': '250px'}}>{custom.email1}</p>
 
                         <p className="w-50 text-primary" style={{'minWidth': '250px'}}>Имя:</p>
-                        <p className="w-50" style={{'minWidth': '250px'}}>{custom.first_name}</p>
+                        <p className="w-50" style={{'minWidth': '250px'}}>{custom.name}</p>
 
-                        <p className="w-50 text-primary" style={{'minWidth': '250px'}}>Фамилия:</p>
-                        <p className="w-50" style={{'minWidth': '250px'}}>{custom.last_name}</p>
 
                         <p className="w-50 text-primary" style={{'minWidth': '250px'}}>Дата регистрации:</p>
                         <p className="w-50" style={{'minWidth': '300px'}}>26-06-2015</p>

@@ -4,7 +4,7 @@ import React, {useState } from "react";
 
 const Modal= () => {
 
-    const [email, password, setEmail, setPass]= useState({email:'', password:''})
+    const [email, password, setEmail, setPass]= useState({email1:'', password:''})
     function Mod (v) {
 
         v.preventDefault()
@@ -46,7 +46,7 @@ const Modal= () => {
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
                                     <input type="email" className="form-control" id="exampleInputEmail12"
-                                           aria-describedby="emailHelp" required name="email" onChange={(v)=>setEmail({email: v.target.value})}/>
+                                           aria-describedby="emailHelp" required name="email" onChange={(v)=>setEmail({email1: v.target.value})}/>
                                         <div id="emailHelp" className="form-text"></div>
                                 </div>
                                 <div className="mb-3">
@@ -72,7 +72,7 @@ const Modal= () => {
                         <div className={'text-center border-1 border-info rounded-1 border p-1 m-3'} id={'message'}
                              style={{display: 'none'}}>Вы успешно вошли!</div>
                         <div className={'text-center border-1 border-info rounded-1 border p-1 m-3'} id={'error'}
-                             style={{display: 'none'}}>Вход не выполнен!</div>
+                             style={{display: 'none'}}>Вз!</div>
                     </div>
                 </div>
             </div>
