@@ -1,9 +1,9 @@
 import React from 'react';
-const Slider = (props) => {
+const SliderZero = (props) => {
     return (
 
-        <div className="carousel-item">
-            <img src={'http://pets.сделай.site/'+props.slider.image} style={{"width": "50%"}} alt="рисунок животного"/>
+        <div className="carousel-item active">
+            <img src={'http://pets.сделай.site/'+props.slider.image} style={{"width": "40%"}} alt="рисунок животного"/>
             <p className="w-50 text-success" style={{minWidth: '250px'}}>id:</p>
             <p className="w-50" style={{minWidth: '300px'}}>{props.slider.id}</p>
             <p className="w-50 text-success" style={{minWidth: '250px'}}>Вид животного:</p>
@@ -13,4 +13,4 @@ const Slider = (props) => {
         </div>
     );
 };
-export default Slider;
+export default SliderZero;

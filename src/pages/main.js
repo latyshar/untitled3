@@ -1,4 +1,4 @@
-import Slider from "../components/slider";
+import Sliders from "../components/sliders";
 import Cards from "../components/cards";
 import React from 'react';
 import Header from "../components/header";
@@ -9,7 +9,7 @@ const Main = () => {
     return (
         <div>
             <Header/>
-            <Slider/>
+            <Sliders/>
             <Cards/>
             <Email/>
             <Footer/>

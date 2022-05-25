@@ -3,8 +3,6 @@ import {Link} from "react-router-dom";
 
 const Profile = (props) => {
 
-
-
     localStorage.token=props.token
     let [custom, setCustom] = useState({first_name: '', last_name: '', email_r: '', country: ''})
     useEffect(()=> {

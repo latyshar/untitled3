@@ -15,9 +15,14 @@ function my_request(pets, setPets) {
         .then(response => setPets(response))}
 
 const Cards = () => {
+
+
+
     let [pets, setPets]=useState({data:{orders:[]}})
     useEffect(()=>my_request(pets, setPets), [pets])
+
     let cards=pets.data.orders.map((pet, index)=><Card pet={pet} key={index}/>)
+
     return (
         <div className='d-flex flex-row flex-wrap'>
             {cards}
